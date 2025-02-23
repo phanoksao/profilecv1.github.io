@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header{
+      display: flex;
+      justify-content: center;
+       
+    }
+        nav {  
+            background: #2c3e50;
+            position: fixed;
+            top: 10px;
+            padding: 0.5rem;
+            border-radius: 40px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+      
+        section {
+            padding: 3rem 2rem;
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        #home {
+            background: #faf4f9;
+            height:600px ;
+            text-align: center;
+          
+        }
+        #home .icon{
+            display: flex;
+            align-items: center; 
+            margin-left: 50px;
+            width: 30px;
+            height: 30px;
+              margin-top: 50px;  
+            font-size: 25px;
+          content: 0;
+        }
+        #home i{
+            width: 100%;
+            height: 100%;
+            margin: 8px;
+          
+           
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .timeline-home {
+            border-left: px solid #2c3e50;
+            padding-left: 2rem;
+        }
+
+        .timeline-home1 {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-home1::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+          
+            width: 2px;
+            height: 55px;
+            background: #2c3e50;
+            
+        }
+
+       
+        #about {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+        }
+        h2{
+            text-align: center;
+        }
+        .about_Profile{
+            width: 400px;
+            height: 500px;
+            border-radius: 5%;
+
+        }
+       
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+      
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+       
+        .timeline {
+            border-left: 3px solid #2c3e50;
+            padding-left: 2rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: #2c3e50;
+            border-radius: 50%;
+        }
+
+        #contact {
+            background: #f4f4f4;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 0.7rem 2rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+     <header class="header">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section id="home">
+        <div class="container">
+            <img src="NAJA.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Hi I'm Sao Phanok</h1>
+            <p>Frontend Developer</p> 
+            <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+       </div>
+
+        </div>
+       
+           
+    </section>
+    <section>
+        <div class="timeline-home">
+           <div class="timeline-home1"></div> 
+        </div>
+    </section>
+
+   
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img class="about_Profile" src="nok.jpg" alt="">
+            <p>Passionate frontend developer with 3+ years of experience...</p>
+        </div>
+    </section>
+
+   
+ 
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-commerce Website</h3>
+                    <p>Built with HTML, CSS, and JavaScript</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    
+     <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">React</div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Frontend Developer - ABC Corp</h3>
+                    <p>2020-2023</p>
+                    <p>Developed responsive web applications...</p>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+       
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+      
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will respond soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
